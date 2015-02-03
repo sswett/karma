@@ -46,3 +46,55 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+
+/* Beginning of my own styles */
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+div {
+    border: 1px solid Chocolate;
+}
+
+header {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.topnav {
+	width: 100%;
+}
+
+.content {
+	width: 60%;
+	min-width: 35rem;
+	height: 2.75rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
+}
+
+.logo {
+	width: 26px;
+}
+
+.links {
+	/* display: inline-block; */
+	margin-top: .8rem;
+	color: #838994;
+	float: right;
+}
+
+.links li {
+	display: inline-block;
+	margin-left: 1em;
+}
+
+.links li.active {
+	color: #4c5058;
+	font-weight: bold;
+}

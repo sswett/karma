@@ -1,3 +1,14 @@
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+
+html {
+  box-sizing: border-box; 
+}
+
+*, *:before, *:after {
+   box-sizing: inherit; 
+}
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -51,9 +62,12 @@ table {
 
 /* Beginning of my own styles */
 
+html {
+	font-size: 62.5%;   /* So that 1 rem = 10 px */
+	-webkit-font-smoothing: antialiased;
+}
 
 body {
-	font-family: 'Roboto', sans-serif;
 }
 
 div {
@@ -61,40 +75,58 @@ div {
 }
 
 header {
-	padding-top: 1em;
-	padding-bottom: 1em;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+	color: #838994;
+	letter-spacing: .048rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
-.topnav {
-	width: 100%;
+.top-navigation {
+	background-color: #fff;
+}
+
+.top-navigation > .content {
+	width: 97rem;  /* 970px */
+	/* Could use a width of 60% to make it more dynamic */
+	height: 7rem;
+	margin: 0 auto;
+	/* min-width: 56rem; */
 }
 
 .content {
-	width: 60%;
-	min-width: 35rem;
-	height: 2.75rem;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 1rem;
+	padding: 1.5rem;
 }
 
 .logo {
 	width: 26px;
 }
 
-.links {
-	/* display: inline-block; */
-	margin-top: .8rem;
+/* Why are the following rules no longer being honored? */
+
+.top-navigation > .content > .links {
+	margin-top: 1.3rem;
 	color: #838994;
 	float: right;
 }
 
-.links li {
+.top-navigation > .content > .links li {
 	display: inline-block;
-	margin-left: 1em;
+	margin-left: 1.5em;
 }
 
-.links li.active {
+.top-navigation > .content > .links .active {
 	color: #4c5058;
-	font-weight: bold;
+	font-weight: 600;
+}
+
+.top-navigation > .content > .links a {
+	color: #838994;
+	text-decoration: none;
+}
+
+.top-navigation > .content > .links a:hover {
+	color: black;
+	cursor: pointer;
 }

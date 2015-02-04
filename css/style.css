@@ -88,22 +88,20 @@ header {
 }
 
 .top-navigation > .content {
-	width: 97rem;  /* 970px */
 	/* Could use a width of 60% to make it more dynamic */
 	height: 7rem;
-	margin: 0 auto;
 	/* min-width: 56rem; */
 }
 
 .content {
+	width: 97rem;  /* 970px */
 	padding: 1.5rem;
+	margin: 0 auto;
 }
 
 .logo {
 	width: 26px;
 }
-
-/* Why are the following rules no longer being honored? */
 
 .top-navigation > .content > .links {
 	margin-top: 1.3rem;
@@ -118,7 +116,7 @@ header {
 
 .top-navigation > .content > .links .active {
 	color: #4c5058;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .top-navigation > .content > .links a {
@@ -138,6 +136,10 @@ header {
 	background-size: cover;
 	background-position: center bottom;
     background-repeat: no-repeat;
+}
+
+h1, h2, h3 {
+	font-weight: 300;   /* default is 400 */
 }
 
 h1 {
@@ -165,7 +167,7 @@ h3 {
 	margin-top: 2rem;
 }
 
-button {
+.big-button {
     width: 15.5rem;
     background-color: #f15a29;
     border-color: #f15a29;
@@ -177,7 +179,7 @@ button {
     font-size: 1.8rem;
 }
 
-button:hover {
+.big-button:hover {
     background-color: #d9400e;
     border-color: #cf3d0e;
     cursor: pointer;

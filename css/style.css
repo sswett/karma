@@ -138,7 +138,7 @@ header {
     background-repeat: no-repeat;
 }
 
-h1, h2, h3 {
+h1, h2 {
 	font-weight: 300;   /* default is 400 */
 }
 
@@ -147,7 +147,7 @@ h1 {
 }
 
 h2 {
-	font-size: 3.5rem;
+	font-size: 4.4rem;
 }
 
 h3 {
@@ -183,4 +183,30 @@ h3 {
     background-color: #d9400e;
     border-color: #cf3d0e;
     cursor: pointer;
+}
+
+.cases .content h2, .cases .content ul {
+	text-align: center;
+}
+
+.cases .content h2 {
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+}
+
+.svg-icons {
+	list-style-type: none;
+}
+
+.svg-icons li {
+	display: inline-block;
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
+.svg-icon {
+	height: 127px;
+	display: inline-block;
+	margin-top: 3.5rem;
+	margin-bottom: 3.5rem;
 }
